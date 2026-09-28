@@ -43,6 +43,7 @@ Separate input features from the target variable.
 Split the data into training and testing sets.
 Use stratified splitting to maintain similar class proportions in both sets.
 Standardize features for Logistic Regression.
+
 4. Feature Engineering
 
 The original clinical variables will be used as model features. No unnecessary features will be created because the dataset is relatively small.
