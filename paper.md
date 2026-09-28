@@ -93,3 +93,27 @@ The dataset is relatively small, containing 303 records. Therefore, model perfor
 9. Expected Outcome
 
 The experiment will compare Logistic Regression and Random Forest using the same dataset and evaluation metrics. The final conclusion will be based on the measured test-set results rather than assuming that one model will perform better before the experiment is conducted.
+
+## 4. Results
+
+The performance of Logistic Regression and Random Forest was evaluated using the same test dataset. The models were compared using accuracy, precision, recall, F1-score, and ROC-AUC.
+
+Logistic Regression achieved an accuracy of 0.8689, precision of 0.8125, recall of 0.9286, F1-score of 0.8667, and ROC-AUC of 0.9513. Random Forest achieved an accuracy of 0.9167, precision of 0.8438, recall of 0.9643, F1-score of 0.9000, and ROC-AUC of 0.9545.
+
+The results show that both models were able to classify the presence or absence of heart disease on the test set. The confusion matrices provide additional information about the correct and incorrect predictions made by each model.
+
+### Table 1. Model Performance Comparison
+
+| Model | Accuracy | Precision | Recall | F1-score | ROC-AUC |
+
+|---|---:|---:|---:|---:|---:|
+
+| Logistic Regression | 0.8689 | 0.8125 | 0.9286 | 0.8667 | 0.9513 |
+
+| Random Forest | 0.9167 | 0.8438 | 0.9643 | 0.9000 | 0.9545 |
+
+### Figure 1. Confusion Matrix Comparison
+
+![Confusion Matrix Comparison](confusion_matrix_comparison.png)
+
+The confusion matrices show the numbers of correct and incorrect predictions for both models. Logistic Regression produced 27 true negatives, 6 false positives, 2 false negatives, and 26 true positives. Random Forest produced 28 true negatives, 5 false positives, 1 false negative, and 27 true positives.
