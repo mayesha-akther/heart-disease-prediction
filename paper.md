@@ -1,0 +1,5 @@
+# Heart Disease Prediction Using Machine Learning
+
+## Abstract
+
+Heart disease is one of the major health concerns worldwide, making early risk prediction an important area of research. This study investigates the use of machine learning models for predicting the presence of heart disease using clinical patient data. The study uses the UCI Heart Disease dataset and applies data preprocessing techniques, including handling missing values, feature preparation, and stratified train-test splitting. Two supervised machine learning models, Logistic Regression and Random Forest, are trained and evaluated. Model performance is assessed using accuracy, precision, recall, and F1-score. The experimental results provide a comparison of the predictive performance of the two models and demonstrate the potential of machine learning for supporting heart disease risk prediction. The findings also highlight the importance of appropriate preprocessing and model evaluation when working with clinical datasets.
