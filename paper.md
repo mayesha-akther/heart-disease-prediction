@@ -104,7 +104,7 @@ Logistic Regression achieved an accuracy of 0.8689, precision of 0.8125, recall 
 
 | Model | Accuracy | Precision | Recall | F1-score | ROC-AUC |
 |---|---:|---:|---:|---:|---:|
-| Logistic Regression | 0.8689 | 0.8125 | 0.9286 | 0.8667 | 0.9513 |
+| Logistic Regression | 0.8689 | 0.8125 | 0.8286 | 0.8667 | 0.9513 |
 | Random Forest | 0.9016 | 0.8438 | 0.9643 | 0.9000 | 0.9545 |
 
 ### Table 2. Confusion Matrix Values
@@ -125,3 +125,31 @@ The confusion matrices show the numbers of correct and incorrect predictions mad
 ![Model Performance Comparison](model_performance_comparison.png)
 
 The performance comparison shows the differences between Logistic Regression and Random Forest across accuracy, precision, recall, F1-score, and ROC-AUC.
+
+## 4. Discussion
+
+The experimental results show that both Logistic Regression and Random Forest were able to predict the presence or absence of heart disease using the clinical features in the UCI Heart Disease dataset. Random Forest achieved higher values for accuracy, precision, recall, F1-score, and ROC-AUC than Logistic Regression in this experiment.
+
+The confusion matrices provide additional information about the prediction errors. Logistic Regression produced 27 true negatives, 6 false positives, 2 false negatives, and 26 true positives. Random Forest produced 28 true negatives, 5 false positives, 1 false negative, and 27 true positives. Therefore, Random Forest made fewer incorrect predictions on the test dataset.
+
+The ROC-AUC values were also high for both models. Logistic Regression achieved a ROC-AUC of 0.9513, while Random Forest achieved 0.9545. These results indicate that both models were able to distinguish between the two target classes effectively on the test data.
+
+However, the results should be interpreted with caution. The UCI Heart Disease dataset contains only 303 records, and the models were evaluated using a single 80/20 train-test split. Therefore, the reported performance may vary with a different data split. The dataset also represents a limited population and is not sufficient for clinical deployment. The results of this study should therefore be considered an educational machine-learning experiment rather than a clinical diagnostic system.
+
+## 5. Conclusion
+
+This study investigated the application of machine learning models for predicting the presence of heart disease using the UCI Heart Disease dataset. Logistic Regression and Random Forest were trained using the preprocessed clinical features and evaluated on the same test dataset.
+
+Logistic Regression achieved an accuracy of 86.89% and a ROC-AUC of 95.13%, while Random Forest achieved an accuracy of 90.16% and a ROC-AUC of 95.45% in this experiment. The results show that both models were able to classify the presence and absence of heart disease using the selected clinical features.
+
+Although the models produced promising results on the test dataset, the small dataset size and single train-test split limit the generalizability of the findings. Future work could use larger datasets, cross-validation, additional machine learning algorithms, and more extensive feature engineering to further investigate heart disease prediction.
+
+Overall, this project demonstrates how machine learning can be applied to structured clinical data for an educational heart disease prediction task. The results should not be interpreted as a substitute for professional medical diagnosis.
+
+## 6. References
+
+1. UCI Machine Learning Repository. Heart Disease Dataset. University of California, Irvine. Available at: https://archive.ics.uci.edu/dataset/45/heart+disease
+
+2. Nasution et al. (2025). Heart disease prediction using machine learning algorithms. https://doi.org/10.25299/ijtrd.2025.17941
+
+3. Muhammad, Y., Tahir, M., Hayat, M., et al. (2020). Early and accurate detection and diagnosis of heart disease using intelligent computational model. Scientific Reports, 10, 19747. https://doi.org/10.1038/s41598-020-76635-9
